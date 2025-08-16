@@ -1,4 +1,5 @@
 import '../styles/home.css';
+import profileImg from './assets/profile.jpg';
 
 const Home = () => {
     return (
@@ -6,7 +7,7 @@ const Home = () => {
             <div className="container">
                 <div className="home-content">
                     <img
-                        src="/assets/profile.jpg"
+                        src={profileImg}
                         alt="Profile"
                         className="profile-image"
                     />
