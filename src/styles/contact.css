@@ -1,0 +1,13 @@
+/* Add this to your contact page CSS */
+.contact-section {
+    padding-top: 80px; /* Adjust this value to match your navbar height */
+    min-height: 100vh;
+    background: #f5f5dc;
+}
+
+.section-title {
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+    padding-top: 3rem;
+}
