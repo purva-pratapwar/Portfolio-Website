@@ -77,8 +77,8 @@ const About = () => {
                             </p>
                             {/* Direct download link */}
                             <a
-                                href="/assets/Purva_Pratapwar_Resume.pdf"
-                                download="Purva_Pratapwar_Resume.pdf"
+                                href="/assets/me22b179_4)_Resume.docx.pdf"
+                                download="Resume.pdf"
                                 className="download-btn"
                             >
                                 <i className="fas fa-download me-2"></i>
