@@ -2,20 +2,13 @@ import React from 'react';
 import '../styles/about.css';
 
 const About = () => {
-    const handleDownload = () => {
-        const link = document.createElement('a');
-        link.href = '/assets/Purva_Pratapwar_Resume.pdf'; // Adjust path
-        link.download = 'Purva_Pratapwar_Resume.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
-
     return (
         <section className="about-section">
             <div className="about-container">
                 <h2 className="section-title" style={{ color: "#f5f5dc", fontWeight: "bold" }}>About Me</h2>
                 <div className="about-content">
+
+                    {/* Left Column: Skills */}
                     <div className="skills-main-card">
                         <h3 className="skills-title">Skills</h3>
                         <div className="skills-inner">
@@ -60,7 +53,7 @@ const About = () => {
                         </div>
                     </div>
 
-                    {/* Right Side: Professional Experience + Resume */}
+                    {/* Right Side: Experience + Resume */}
                     <div className="right-column">
                         <div className="experience-card">
                             <h3 className="section-header">Professional Experience</h3>
@@ -82,10 +75,15 @@ const About = () => {
                             <p className="resume-description">
                                 I am seeking professional opportunities to apply my skills and grow. Click below to download my resume.
                             </p>
-                            <button className="download-btn" onClick={handleDownload}>
+                            {/* Direct download link */}
+                            <a
+                                href="/assets/Purva_Pratapwar_Resume.pdf"
+                                download="Purva_Pratapwar_Resume.pdf"
+                                className="download-btn"
+                            >
                                 <i className="fas fa-download me-2"></i>
                                 Download My Resume
-                            </button>
+                            </a>
                         </div>
                     </div>
 
