@@ -1,13 +1,11 @@
 import '../styles/home.css';
-import profileImg from '../assets/profile.jpg';
-
 const Home = () => {
     return (
         <section className="home-section">
             <div className="container">
                 <div className="home-content">
                     <img
-                        src={profileImg}
+                        src="/assets/profile.jpg"
                         alt="Profile"
                         className="profile-image"
                     />
