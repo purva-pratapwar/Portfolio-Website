@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
     plugins: [react()],
-    base: './', // ✅ Crucial for GitHub Pages or subfolder deployment
+    base: '/Portfolio-Website/', // ✅ Crucial for GitHub Pages or subfolder deployment
     server: {
         port: 3000, // ✅ Optional, for local dev
     },
