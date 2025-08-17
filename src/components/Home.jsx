@@ -5,7 +5,7 @@ const Home = () => {
             <div className="container">
                 <div className="home-content">
                     <img
-                        src="/assets/profile.jpg"
+                        src="/src/assets/profile.jpg"
                         alt="Profile"
                         className="profile-image"
                     />
