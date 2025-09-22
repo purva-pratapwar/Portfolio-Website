@@ -1,13 +1,51 @@
-/* Add this to your contact page CSS */
 .contact-section {
-    padding-top: 80px; /* Adjust this value to match your navbar height */
+    padding: 4rem 1rem;
     min-height: 100vh;
-    background: #f5f5dc;
+    background: var(--primary-bg);
 }
 
-.section-title {
-    position: relative;
-    z-index: 1;
-    margin-top: 0;
-    padding-top: 3rem;
+.contact-form {
+    background: var(--secondary-bg);
+    padding: 2.5rem;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    max-width: 700px;
+    margin: 0 auto;
+    border: 1px solid #564F6F;
+}
+
+.form-label {
+    color: var(--text-light);
+}
+
+.form-control {
+    background-color: var(--primary-bg);
+    border: 1px solid #564F6F;
+    color: var(--text-light);
+}
+
+.form-control:focus {
+    background-color: var(--primary-bg);
+    color: var(--text-light);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 0.25rem rgba(128, 43, 177, 0.25);
+}
+
+.form-control::placeholder {
+    color: var(--text-light);
+    opacity: 0.5;
+}
+
+.btn-custom {
+    background: var(--accent);
+    color: var(--text-light);
+    border: none;
+    border-radius: 12px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background: #6a2494; /* Darker accent */
 }

@@ -12,7 +12,6 @@ const Projects = () => {
                 "Whisper/Pyaudio for voice processing.",
             ],
             github: "https://github.com/purva-pratapwar/SpotyMood",
-            icon: <FaSpotify />
         },
         {
             title: "SBI EverSure",
@@ -23,18 +22,6 @@ const Projects = () => {
                 "Interactive Plotly visualizations."
             ],
             github: "https://github.com/purva-pratapwar/SBI-Eversure",
-            icon: <FaShieldAlt />
-        },
-        {
-            title: "AgriMitra",
-            description: "Voice-enabled AI farming advisor with 80% accuracy.",
-            highlights: [
-                "React chat interface with local dialects.",
-                "Weather-based irrigation model.",
-                "Crop/pest detection system."
-            ],
-            github: "https://github.com/SSPIIT/capital_one",
-            icon: <FaLeaf />
         },
         {
             title: "Credit Card Fraud Detection",
@@ -45,7 +32,6 @@ const Projects = () => {
                 "GridSearchCV optimization."
             ],
             github: "https://github.com/me22b179/Credit-Card-Fraud-Detection/",
-            icon: <FaShieldAlt />
         },
         {
             title: "YouTube Clone",
@@ -56,7 +42,6 @@ const Projects = () => {
                 "Firebase authentication."
             ],
             github: "https://github.com/me22b179/Credit-Card-Fraud-Detection/",
-            icon: <FaYoutube />
         },
         {
             title: "Algorithmic File Compressor",
@@ -67,7 +52,6 @@ const Projects = () => {
                 "Accurate decompression."
             ],
             github: "https://github.com/purva-pratapwar/Algorithmic-File-Compressor",
-            icon: <FaFileArchive />
         },
         {
             title: "Expense Tracker",
@@ -78,7 +62,6 @@ const Projects = () => {
                 "Category-wise spending analysis."
             ],
             github: "https://github.com/purva-pratapwar/Expense-Tracker",
-            icon: <FaMoneyBillWave />
         }
     ];
 

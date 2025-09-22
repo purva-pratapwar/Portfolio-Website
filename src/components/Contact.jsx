@@ -29,28 +29,23 @@ const Contact = () => {
         try {
             const success = await sendEmail(formData.name, formData.email, formData.message);
             if (success) {
-                setResponse({ type: 'success', message: 'Thank you for reaching out! An email has been sent to you.' });
+                setResponse({ type: 'success', message: 'Thank you for reaching out! Your message has been sent.' });
                 setFormData({ name: '', email: '', message: '' });
             } else {
-                setResponse({ type: 'error', message: 'Failed to send email. Please try again later.' });
+                setResponse({ type: 'error', message: 'Failed to send message. Please try again later.' });
             }
         } catch (error) {
-            setResponse({ type: 'error', message: `Failed to send email: ${error.message}` });
+            setResponse({ type: 'error', message: `Failed to send message: ${error.message}` });
         }
     };
 
     return (
-        <section className="py-5 section-container" style={{ background: "#f5f5dc" }}>
+        <section className="contact-section">
             <div className="container">
-                <h2 className="section-title" style={{ color: "#800000", fontWeight: "bold" }}>Contact Me</h2>
-                <form onSubmit={handleSubmit} style={{
-                    background: "rgba(255,255,255,0.7)",
-                    padding: "2rem",
-                    borderRadius: "18px",
-                    boxShadow: "0 4px 16px rgba(0,0,0,0.08)"
-                }}>
+                <h2 className="section-title">Contact Me</h2>
+                <form onSubmit={handleSubmit} className="contact-form">
                     <div className="mb-3">
-                        <label className="text-dark form-label">Name</label>
+                        <label className="form-label">Name</label>
                         <input
                             type="text"
                             name="name"
@@ -62,7 +57,7 @@ const Contact = () => {
                         />
                     </div>
                     <div className="mb-3">
-                        <label className="text-dark form-label">Email</label>
+                        <label className="form-label">Email</label>
                         <input
                             type="email"
                             name="email"
@@ -74,7 +69,7 @@ const Contact = () => {
                         />
                     </div>
                     <div className="mb-3">
-                        <label className="text-dark form-label">Message</label>
+                        <label className="form-label">Message</label>
                         <textarea
                             name="message"
                             className="form-control"
@@ -89,7 +84,7 @@ const Contact = () => {
                         Send Message
                     </button>
                     {response && (
-                        <div className={`alert alert-${response.type} mt-3`}>
+                        <div className={`alert alert-${response.type === 'error' ? 'danger' : 'success'} mt-3`}>
                             {response.message}
                         </div>
                     )}
