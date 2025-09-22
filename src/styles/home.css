@@ -4,15 +4,21 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 80px; /* Account for navbar */
+    justify-content: center;
+    padding-top: var(--navbar-height);
 }
 
 .home-content {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 2rem;
+}
+
+.profile-image-container {
+    flex-shrink: 0;
 }
 
 .profile-image {
@@ -22,6 +28,11 @@
     object-fit: cover;
     border: 5px solid #a0522d;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
 }
 
 .home-text {
@@ -29,29 +40,41 @@
 }
 
 .home-text h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     color: #f5f5dc;
+    font-weight: 700;
 }
 
 .home-text h2 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
     color: #a0522d;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .home-text p {
     font-size: 1.1rem;
     line-height: 1.6;
     max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.social-links a {
+    color: #f5f5dc;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #a0522d;
 }
 
 @media (max-width: 768px) {
     .home-content {
         flex-direction: column;
         text-align: center;
-        padding: 2rem;
     }
 
     .profile-image {
@@ -61,7 +84,7 @@
     }
 
     .home-text h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .home-text h2 {

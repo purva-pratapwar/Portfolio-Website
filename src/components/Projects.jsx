@@ -1,77 +1,84 @@
 import '../styles/projects.css';
-import { FaGithub, FaSpotify, FaYoutube, FaMoneyBillWave, FaShieldAlt, FaLeaf, FaFileArchive } from 'react-icons/fa';
+import { FaGithub, FaSpotify, FaShieldAlt, FaLeaf, FaYoutube, FaMoneyBillWave, FaFileArchive } from 'react-icons/fa';
 
 const Projects = () => {
     const projects = [
         {
             title: "SpotyMood",
-            description: "AI-powered personalized Spotify playlist generator by analyzing faces, voice, or manual mood input",
+            description: "AI-powered personalized Spotify playlist generator by analyzing faces, voice, or manual mood input.",
             highlights: [
-                "Dash + Flask web app with mood detection",
-                "OpenCV/TensorFlow for face analysis",
-                "Whisper/Pyaudio for voice processing",
+                "Dash + Flask web app with mood detection.",
+                "OpenCV/TensorFlow for face analysis.",
+                "Whisper/Pyaudio for voice processing.",
             ],
-            github: "https://github.com/purva-pratapwar/SpotyMood"
+            github: "https://github.com/purva-pratapwar/SpotyMood",
+            icon: <FaSpotify />
         },
         {
             title: "SBI EverSure",
-            description: "Dynamic insurance recommender adapting policies to user inputs",
+            description: "Dynamic insurance recommender adapting policies to user inputs.",
             highlights: [
-                "XGBoost for policy recommendations",
-                "Life event prediction models",
-                "Interactive Plotly visualizations"
+                "XGBoost for policy recommendations.",
+                "Life event prediction models.",
+                "Interactive Plotly visualizations."
             ],
-            github: "https://github.com/purva-pratapwar/SBI-Eversure"
+            github: "https://github.com/purva-pratapwar/SBI-Eversure",
+            icon: <FaShieldAlt />
         },
         {
             title: "AgriMitra",
-            description: "Voice-enabled AI farming advisor with 80% accuracy",
+            description: "Voice-enabled AI farming advisor with 80% accuracy.",
             highlights: [
-                "React chat interface with local dialects",
-                "Weather-based irrigation model",
-                "Crop/pest detection system"
+                "React chat interface with local dialects.",
+                "Weather-based irrigation model.",
+                "Crop/pest detection system."
             ],
-            github: "https://github.com/SSPIIT/capital_one"
+            github: "https://github.com/SSPIIT/capital_one",
+            icon: <FaLeaf />
         },
         {
             title: "Credit Card Fraud Detection",
-            description: "SMOTE-balanced XGBoost model with superior ROC-AUC",
+            description: "SMOTE-balanced XGBoost model with superior ROC-AUC.",
             highlights: [
-                "Handled class imbalance with SMOTE",
-                "Model comparison framework",
-                "GridSearchCV optimization"
+                "Handled class imbalance with SMOTE.",
+                "Model comparison framework.",
+                "GridSearchCV optimization."
             ],
-            github: "https://github.com/me22b179/Credit-Card-Fraud-Detection/"
+            github: "https://github.com/me22b179/Credit-Card-Fraud-Detection/",
+            icon: <FaShieldAlt />
         },
         {
             title: "YouTube Clone",
-            description: "Distraction-free interface focusing on search functionality",
+            description: "Distraction-free interface focusing on search functionality.",
             highlights: [
-                "YouTube/Google API integration",
-                "Voice search implementation",
-                "Firebase authentication"
+                "YouTube/Google API integration.",
+                "Voice search implementation.",
+                "Firebase authentication."
             ],
-            github: "https://github.com/me22b179/Credit-Card-Fraud-Detection/"
+            github: "https://github.com/me22b179/Credit-Card-Fraud-Detection/",
+            icon: <FaYoutube />
         },
         {
             title: "Algorithmic File Compressor",
-            description: "Huffman Coding implementation for lossless compression",
+            description: "Huffman Coding implementation for lossless compression.",
             highlights: [
-                "MinHeap frequency analysis",
-                "Variable-length prefix encoding",
-                "Accurate decompression"
+                "MinHeap frequency analysis.",
+                "Variable-length prefix encoding.",
+                "Accurate decompression."
             ],
-            github: "https://github.com/purva-pratapwar/Algorithmic-File-Compressor"
+            github: "https://github.com/purva-pratapwar/Algorithmic-File-Compressor",
+            icon: <FaFileArchive />
         },
         {
             title: "Expense Tracker",
-            description: "Interactive financial dashboard with real-time analytics",
+            description: "Interactive financial dashboard with real-time analytics.",
             highlights: [
-                "Dash/Plotly visualization",
-                "JSON data persistence",
-                "Category-wise spending analysis"
+                "Dash/Plotly visualization.",
+                "JSON data persistence.",
+                "Category-wise spending analysis."
             ],
-            github: "https://github.com/purva-pratapwar/Expense-Tracker"
+            github: "https://github.com/purva-pratapwar/Expense-Tracker",
+            icon: <FaMoneyBillWave />
         }
     ];
 

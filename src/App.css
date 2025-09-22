@@ -5,8 +5,6 @@
   --dark: #222;
   --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
   --navbar-height: 70px;
-  --about-title-color: #F5F5DC; /* Yellow */
-  --projects-title-color: #800000; /* Red */
 }
 
 * {
@@ -21,19 +19,11 @@ body {
   color: #333;
   line-height: 1.6;
 }
-.page-content {
+
+.main-content {
   padding-top: var(--navbar-height);
-  min-height: 100vh;
 }
 
-/* Make sure navbar stays on top */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  /* Your existing navbar styles */
-}
 .section-container {
   padding: 6rem 2rem 4rem;
   min-height: 100vh;

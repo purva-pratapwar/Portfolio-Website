@@ -3,13 +3,13 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
     plugins: [react()],
-    base: '/Portfolio-Website/', // ✅ Crucial for GitHub Pages or subfolder deployment
+    base: '/Portfolio-Website/', // ✅ Crucial for GitHub Pages
     server: {
-        port: 3000, // ✅ Optional, for local dev
+        port: 3000,
     },
     build: {
-        outDir: 'dist', // ✅ Explicit output folder
-        emptyOutDir: true, // ✅ Clears folder before build
-        sourcemap: false // ✅ Optional, disables source maps for prod
-    }
+        outDir: 'dist',
+        emptyOutDir: true,
+        sourcemap: false,
+    },
 });

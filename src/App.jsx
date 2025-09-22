@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
@@ -11,18 +11,15 @@ function App() {
     return (
         <Router>
             <Navbar />
-            <Routes>
-                {/* Default Home Route */}
-                <Route path="/" element={<Home />} />
-
-                {/* Other Pages */}
-                <Route path="/about" element={<About />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/contact" element={<Contact />} />
-
-                {/* Redirect any unknown route to Home */}
-                <Route path="*" element={<Navigate to="/" replace />} />
-            </Routes>
+            <main className="main-content">
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/projects" element={<Projects />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="*" element={<Navigate to="/" replace />} />
+                </Routes>
+            </main>
             <Footer />
         </Router>
     );

@@ -18,7 +18,7 @@ const Footer = () => {
                     <a href="https://www.linkedin.com/in/purva-pratapwar-8a6362263" className="text-light footer-link mx-2">
                         <i className="fab fa-linkedin fa-2x"></i>
                     </a>
-                    <a href="https://github.com/me22b179" className="text-light footer-link mx-2">
+                    <a href="https://github.com/purva-pratapwar/" className="text-light footer-link mx-2">
                         <i className="fab fa-github fa-2x"></i>
                     </a>
                 </div>
