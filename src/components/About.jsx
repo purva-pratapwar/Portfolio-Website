@@ -9,7 +9,7 @@ const About = () => {
 
                 <div className="intro-paragraph-container">
                     <p>
-                        I am a passionate Mechanical Engineering student at IIT Madras with a strong enthusiasm for technology and software development. My journey is driven by a desire to build innovative, user-centric solutions that solve real-world problems. I thrive in environments where I can blend my analytical background with my creative coding skills, particularly in the realms of data analysis and web development.
+                        {/*I am a passionate Mechanical Engineering student at IIT Madras with a strong enthusiasm for technology and software development. My journey is driven by a desire to build innovative, user-centric solutions that solve real-world problems. I thrive in environments where I can blend my analytical background with my creative coding skills, particularly in the realms of data analysis and web development.*/}
                     </p>
                 </div>
 

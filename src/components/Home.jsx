@@ -14,8 +14,8 @@ const Home = () => {
                     <div className="intro-container">
                         <h2>Mechanical Engineering Student at IIT Madras</h2>
                         <p>
-                            Passionate about technology and building innovative solutions.
-                            Currently exploring software development, data analysis, and creative projects.
+                            A final year Mechanical Engineering student at IIT Madras with a strong enthusiasm for technology and software development fields.
+
                         </p>
                     </div>
                 </div>
